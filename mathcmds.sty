@@ -1,0 +1,36 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{mathcmds}
+
+%%% SPECIAL SETS
+\renewcommand{\emptyset}{\varnothing}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\C}{\mathbb{C}}
+\renewcommand{\L}{\mathscr{L}}
+
+%%% SET & LOGIC NOTATION
+\newcommand{\segment}[2]{\left( #1, #2 \right)}
+\newcommand{\interval}[2]{\left[ #1, #2 \right]}
+\newcommand{\suchthat}{\mid}
+\newcommand{\set}[2]{\lbrace #1 \suchthat #2 \rbrace}
+\renewcommand{\and}{\text{ and }}
+
+%%% ALGEBRA
+\DeclarePairedDelimiter{\cyclic}{\langle}{\rangle}
+\newcommand{\closure}[1]{\overbar{#1}}
+\DeclarePairedDelimiter{\order}{\lvert}{\rvert}
+\newcommand{\Ker}{\operatorname{Ker}}
+
+%%% ANALYSIS, TOPOLOGY, ETC.
+\renewcommand{\Re}{\operatorname{Re}}
+\renewcommand{\Im}{\operatorname{Im}}
+\DeclarePairedDelimiter{\abs}{\lvert}{\rvert}
+\DeclarePairedDelimiter{\norm}{\lvert\lvert}{\rvert\rvert}
+\renewcommand{\vec}[1]{\boldsymbol{#1}}
+\newcommand{\std}{\mathrm{std}}
+
+%%% NUMBER THEORY
+\DeclarePairedDelimiter{\floor}{\lfloor}{\rfloor}
+
+
