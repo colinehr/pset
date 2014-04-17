@@ -1,13 +1,17 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{mathcmds}
 
+%%% HELPER COMMANDS
+\DeclarePairedDelimiter{\paren}{\left(}{\right)}
+
 %%% SPECIAL SETS
 \renewcommand{\emptyset}{\varnothing}
 \newcommand{\Z}{\mathbb{Z}}
 \newcommand{\Q}{\mathbb{Q}}
 \newcommand{\R}{\mathbb{R}}
-\newcommand{\C}{\mathbb{C}}
+\renewcommand{\C}{\mathbb{C}}
 \renewcommand{\L}{\mathscr{L}}
+\renewcommand{\M}{\mathfrak{M}}
 
 %%% SET & LOGIC NOTATION
 \newcommand{\segment}[2]{\left( #1, #2 \right)}
@@ -15,12 +19,16 @@
 \newcommand{\suchthat}{\mid}
 \newcommand{\set}[2]{\lbrace #1 \suchthat #2 \rbrace}
 \renewcommand{\and}{\text{ and }}
+%\renewcommand{\or}{\text{ or }}
 
 %%% ALGEBRA
 \DeclarePairedDelimiter{\cyclic}{\langle}{\rangle}
-\newcommand{\closure}[1]{\overbar{#1}}
+\newcommand{\closure}[1]{\bar{#1}}
+\newcommand{\overbar}[1]{\mkern 1.5mu\overline{\mkern-1.5mu#1\mkern-1.5mu}\mkern 1.5mu}
 \DeclarePairedDelimiter{\order}{\lvert}{\rvert}
 \newcommand{\Ker}{\operatorname{Ker}}
+\newcommand{\cl}{\operatorname{cl}}
+\newcommand{\degree}{\operatorname{degree}}
 
 %%% ANALYSIS, TOPOLOGY, ETC.
 \renewcommand{\Re}{\operatorname{Re}}
@@ -29,8 +37,7 @@
 \DeclarePairedDelimiter{\norm}{\lvert\lvert}{\rvert\rvert}
 \renewcommand{\vec}[1]{\boldsymbol{#1}}
 \newcommand{\std}{\mathrm{std}}
+\newcommand{\diam}{\operatorname{diam}}
 
 %%% NUMBER THEORY
 \DeclarePairedDelimiter{\floor}{\lfloor}{\rfloor}
-
-
